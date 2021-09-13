@@ -38,7 +38,8 @@
   </div>
 </div>
 <BODY>
-    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="user-scalable=no,width=device-width, initial-scale=1.0, viewport-fit=cover">
+
 <style>
 @media screen and (orientation: portrait) {
  /*竖屏 css*/
@@ -50,7 +51,7 @@
     }
 
     div#animate {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 15px 15px 15px 15px;
     color: white;
     padding: 10px;
     font-size: 40px;
@@ -78,16 +79,16 @@
         }
  
         div#box {
-            width: 100%;
+            width: 120%;
             height: 500px;
-            margin: -50 auto;
+            /*margin: -50 auto;*/
             /*border: 1px solid #ff6700;*/
             overflow: hidden;
             background-color: Request["b"];
         }
  
         div#animate {
-            padding-left: 20px;
+            /*padding-left: 20px;*/
             font-size: 320px;
             color: #fff;
             display: inline-block;
@@ -122,6 +123,7 @@
 </style>
 <script type="text/javascript">
     //document.getElementById("header").style.background-color = "blue";
+    //document.getElementById("body").scrollTop(1);
     document.getElementById("box").style.backgroundColor = Request["b"];
    function locationHashChanged() {
      location.reload();
@@ -143,8 +145,5 @@
    }else{
     console.log('no serviceWorker');
    }
-
-//document.getElementsById("innn").innerHTML = 'xxx';
-
 </Script>
 
