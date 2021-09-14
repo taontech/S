@@ -130,7 +130,7 @@
    }
    window.onhashchange = locationHashChanged;
    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker.register('./S/note.js').then(function(reg) {
+        navigator.serviceWorker.register('./note.js').then(function(reg) {
 
            if(reg.installing) {
             console.log('Service worker installing');
