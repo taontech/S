@@ -5,7 +5,8 @@ self.addEventListener('install', function(event) {
         '/S/',
         '/S/s.html',
         '/S/note.js',
-        '/s.html'
+        '/s.html',
+        '/note.js'
       ]);
     })
   );
@@ -29,6 +30,7 @@ self.addEventListener('fetch', function(event) {
         });
         return response;
       }).catch(function () {
+
         return caches.match('/s.html');
       });
     }
